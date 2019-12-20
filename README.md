@@ -1,5 +1,5 @@
 # Deep Learning for Text Classification by Reading Difficulty
-
+##Link to [this repository](https://github.com/hiphan/cs585-nlp): https://github.com/hiphan/cs585-nlp
 ## Files
 - `data_utils:` download the [OneStopEnglishCorpus](https://github.com/nishkalavallabhi/OneStopEnglishCorpus) dataset 
 from Github and create json file. 
