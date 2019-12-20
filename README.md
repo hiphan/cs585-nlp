@@ -13,6 +13,9 @@ script requires a local folder of the Newsela dataset, which is available [here]
 - `utils.py`: tokenizer for the OneStopEnglishCorpus dataset using nltk library. 
 - `svm_onestop.py`: Support Vector Machine (SVM) model for the OneStopEnglishCorpus dataset.
 - `svm_newsela.py`: SVM model for the Newsela dataset. 
+- `logreg.py`: Logistic regression for OneStopEnglishCorpus dataset.
+- `logreg_newsela.py`: Logistic regression for Newsela dataset.
+- `dataload.py`: Contains methods for Newsela dataset analysis.
 <u>NOTE</u>: For the two notebooks below, Pandas' Dataframe version of the Newsela dataset needs to be on Google Drive 
 to mount.
 - `BERTRank.ipynb`: Fine-tuned BERT model. Link to Google Colab is 

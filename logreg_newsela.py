@@ -33,7 +33,7 @@ def load_data():
 def split_data():
 	global test_data
 	global train_data
-	#random.shuffle(train_data)
+	
 	n_test_data = math.ceil(len(train_data)*0.25)
 	test_data = train_data[0:n_test_data]
 	train_data = train_data[n_test_data+1:]
@@ -68,16 +68,25 @@ def logreg(reg = .9):
 	pred = clf.predict(test_x)
 	correct = []
 	i = 0
+	total_error = 0
+	total_squared_error = 0
 	for p, ty in zip(pred, test_y):
 		correct.append(p == ty)
+		error = abs(int(p) - int(ty))
+		total_error += error
+		total_squared_error += error*error
 		if not p == ty:
-			print(test_data[i][0])
-			print(test_data[i][1])
+			pass
+			#print(test_data[i][0])
+			#print(test_data[i][1])
 		i = i + 1
+	print("Accuracy: ", np.mean(correct))
+	print("MAE: ", total_error/len(test_data))
+	print("MsE: ", total_squared_error/len(test_data))
 	return np.mean(correct)
 
 load_data()
-#np.random.shuffle(train_data)
+
 split_data()
 get_vocabulary()
 print(len(vocab))
