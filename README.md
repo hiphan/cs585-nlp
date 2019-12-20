@@ -23,7 +23,8 @@ to mount.
 ## Requirements
  - As mentioned above, a local copy of the Newsela dataset.
  - All required packages are included in `requirements.txt`. Note that this list also contains several redundant packages
- that we tried but did not need for our final models. 
+ that we tried but did not need for our final models. The environment can be created using `conda create --name <env> --file <this file>
+`.
  - For our BERT and Universal Sentence Encoder models, you might need to install Tensorflow Hub to run the notebook on 
  Google Colab.
  - For our BERT model, the package bert-tensorflow is required, but already is included as part of the notebook. 
